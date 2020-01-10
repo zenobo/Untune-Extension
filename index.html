@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Untune</title>
+    <script src="dist/prod.bundle.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:300,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="./images/logo.svg" class="logo" />
+    <h1 class="header-text">Turn any subreddit into a<br />youtube playlist</h1>
+    <h1 class="header-text header-highlight">
+      <span class="header-opt1" id="opt1">Head over to any <a href="https://reddit.com/r/listentothis" target="_blank">subreddit</a> to turn it into a playlist</span>
+      <span class="header-opt2" id="opt2">Ready to turn r/<span id="subreddit"></span> into a playlist.</span>
+    </h1>
+    <div class="header-text header-subreddits" id="header-subreddits">
+      <a href="https://reddit.com/r/music" target="_blank">r/Music</a>
+      <a href="https://reddit.com/r/Listentothis" target="_blank">r/Listentothis</a>
+      <a href="https://reddit.com/r/rap" target="_blank">r/Rap</a>
+    </div>
+    <a href="" id="youtube-url" target="_blank">
+      <img src="./images/playlist-youtube.svg" id="youtube-button" class="playlist-btn playlist-btn-disabled" />
+    </a>
+    <a href="https://untune.io" target="_blank" class="footer-link">Also available at UNTUNE.io</a>
+  </body>
+</html>
