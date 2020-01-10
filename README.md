@@ -1,5 +1,5 @@
 ## Untune Chrome Extension
-A tool to convert subreddits to Youtube Playlists
+A chrome extension which lets users convert any subreddit to a Youtube playlist from their browser.
 
 ## Contents
 
