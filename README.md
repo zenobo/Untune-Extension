@@ -29,7 +29,7 @@ npm run build
 Upload the unpacked extension to chrome.
 
 ## Tests
-Untune uses Jest to test js functions. Tests can be found inside the src folder, eg reddit.test.js. Mock data and expected state is imported from mocks. Whenever the app's state is changed, it will also need to seperately be updated here.
+Untune uses Jest to test js functions. Tests can be found inside the src folder, eg reddit.test.js. Mock data and expected state is imported from the mocks folder. Whenever the app's state is changed, it will also need to seperately be updated here.
 
 #### Run the test watcher  
 ```
