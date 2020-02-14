@@ -4,12 +4,15 @@ import { REDDIT_URL, SUBREDDIT } from '../../mocks';
 
 describe('Reddit', () => {
   it('isSubreddit returns expected value', () => {
-    expect(Reddit.isSubreddit(REDDIT_URL)).toBe(true)
+    expect(Reddit.isSubreddit(REDDIT_URL)).toBe(true);
+  })
+  it('isSubreddit properly fails', () => {
+    expect(Reddit.isSubreddit('An invalid link')).toBe(false);
   })
   it('getSubreddit returns the correct subreddit', () => {
-    expect(Reddit.getSubreddit(REDDIT_URL)).toBe(SUBREDDIT)
+    expect(Reddit.getSubreddit(REDDIT_URL)).toBe(SUBREDDIT);
   })
   it('parseUrl returns expected values', () => {
-    expect(Reddit.parseUrl([{url: REDDIT_URL}])).toMatchObject({parsedUrl: REDDIT_URL, isSubreddit: true, subreddit: SUBREDDIT})
+    expect(Reddit.parseUrl([{url: REDDIT_URL}])).toMatchObject({parsedUrl: REDDIT_URL, isSubreddit: true, subreddit: SUBREDDIT});
   })
 })
